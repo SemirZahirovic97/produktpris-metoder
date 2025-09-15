@@ -22,7 +22,8 @@ namespace produktpris_metoder
             int productPrice, 
             double vat)
         {
-            var totalPrice = (totalProducts)*(productPrice
+            var totalPrice = (totalProducts * productPrice) * (1 + vat);
+            return totalPrice;
         }
     }
 }
